@@ -14,12 +14,19 @@
     </header>
     <main class="container">
         <section>
-           
+            <div class="mb-3 w-50 text-center">
+                <input id="search-fild" type="email" class="form-control" id="exampleFormControlInput1" placeholder="search your phone">
+                <button id="btn-search" type="button" class="btn btn-primary">Search</button>
+              </div>
+        </section>
+<!-- Display searce result -->
 
+        <section>
                 <div id="phones-container" class="row row-cols-1 row-cols-md-3 g-4">
-                    
                 </div>
-                
+                <div id="no-found-message" class="mt-4 d-none">
+                    <h5>no phone found. please try a new search</h5>
+                </div>
         </section>
     </main>
     <script src="js/app.js"></script>
